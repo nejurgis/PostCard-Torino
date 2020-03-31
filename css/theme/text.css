@@ -54,41 +54,41 @@ body {
   font-weight:lighter;
 }
 
-.reveal h1 { 
-  font-size: 2.55em; 
+.reveal h1 {
+  font-size: 2.55em;
   font-family: "Times New Roman", Times, serif;
-  letter-spacing: -1px; 
-  line-height: 1; 
-  text-align: center; 
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
   text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
   color: rgb(0, 255, 0);
-  
+
   }
- 
+
 
 .reveal h2 {
   margin: 0 0 20px 0;
   color: white;
-  font-family: "Times New Roman", Times, serif;  
+  font-family: "Times New Roman", Times, serif;
   line-height: 1px;
   letter-spacing: normal;
   word-wrap: break-word;
-  font-size: 0.51em; 
+  font-size: 0.51em;
   text-shadow: 2px 2px 4px #000000;
 
 }
 
 .reveal h3 {
   font-size: 0.55em;
-  font-family:sans-serif; 
+  font-family:sans-serif;
 }
 
 .reveal h4 {
-  color: #eaeae3; 
+  color: #eaeae3;
   font-family: "Times New Roman", Times, serif;
   font-size: 13px;
-  line-height: auto;  
-  text-align: justify; 
+  line-height: auto;
+  text-align: justify;
   text-justify: inter-word;
   background-color:none;
   padding:5px;
@@ -104,21 +104,13 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
-  color: #eaeae3; 
-  font-family: "Times New Roman", Times, serif; 
+  color: #eaeae3;
+  font-family: "Times New Roman", Times, serif;
   font-size: 13px;
-  line-height: auto; 
+  line-height: auto;
   text-align: justify; text-justify: inter-word;
   background-color:0; /*#0016*/
   padding:10px;
-}
-
-.container {
-  position: absolute;
-  width: 25%;
-  top: 10%;
-  left: 10%;
-
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -304,7 +296,7 @@ body {
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #00FF00; 
+  color: #00FF00;
 }
 
 .reveal .progress span {
@@ -337,7 +329,7 @@ body {
   --f-size: 15;
   --f-unit: 1vmin;
   --f: calc(var(--f-size) * var(--f-unit));
-  --bg: #181717; 
+  --bg: #181717;
 }
 
 *, *::after, *::before {
@@ -346,35 +338,35 @@ body {
 
 
 
-  
+
   &::before,
   &::after {
     --top: 0;        // offset from top [0 - 10]
     --left: 0;       // offset from left [0.001 - 1]
     --v-height: 30%; // visible part
-    
+
     --n-tenth: calc(var(--f-size) * .1 * var(--top));
     --t-cut: calc(var(--n-tenth) / var(--f-size) * 100%);
     --b-cut: calc(var(--t-cut) + var(--v-height));
-    
+
     content: attr(data-text);
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
-    
+
     transform: translateX(calc(var(--left) * 100%));
-    
+
     // this helps to get rid of pixelization
-    filter: drop-shadow(0 0 transparent); 
-    
-    text-shadow: calc(var(--left) * -3em) 0 .02em lime, 
+    filter: drop-shadow(0 0 transparent);
+
+    text-shadow: calc(var(--left) * -3em) 0 .02em lime,
                  calc(var(--left) * -6em) 0 .02em #ff00e1;
-    
+
     background-color: var(--bg);
     clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
-  } 
-  
+  }
+
   &::before {
     animation: glitch-b 1.7s infinite alternate-reverse;
   }
@@ -397,7 +389,7 @@ body {
     --left: 0;
   }
   0% {
-   --v-height: 15%; 
+   --v-height: 15%;
   }
   20% {
     --left: .005;
@@ -430,7 +422,7 @@ body {
     --left: 0;
   }
   0% {
-   --v-height: 15%; 
+   --v-height: 15%;
    --top: 10;
   }
   20% {

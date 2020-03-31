@@ -1,0 +1,46 @@
+.accordion label {
+	display: block;
+	background-color: rgba(0, 255, 0, 0.5);
+	padding: 0 15px;
+	line-height: 0.8rem;
+	color: white;
+	cursor: pointer;
+}
+
+.accordion p {
+	color: #424242;
+	padding: 10px;
+	font-size: 0.8em;
+	line-height: 1.7em;
+	opacity: 0;
+	display: none;
+	text-align: left;
+	background-color: red;
+	margin: 0px;
+	overflow: scroll;
+}
+
+#acc:checked ~ .hiddenText {
+	display: block;
+	opacity: 1;
+}
+
+input#acc {
+	display: none;
+	position: relative;
+}
+
+section {
+	top: 0 !important;
+}
+
+.slides {
+	margin-top: 0 !important;
+}
+
+.container {
+	position: absolute;
+	width: 35%;
+	/* top: 10%; */
+	/* left: 10%; */
+}
